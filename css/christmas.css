@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "snow";
+  src: url(../fonts/DH_snowflakes.ttf);
+}
+
+@font-face {
+  font-family: "frosty";
+  src: url(../fonts/FROSTY__.TTF);
+}
+
+@keyframes snowmenAnimate {
+
+  0%,
+  100% {
+    transform: rotate(-5deg);
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform: rotate(5deg);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes candyAnimate {
+
+  0%,
+  100% {
+    transform: rotate(5deg);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: rotate(-5deg);
+    transform-origin: top;
+  }
+}
+
+@keyframes mysnow {
+  0% {
+    bottom: 100%;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(540deg);
+    opacity: 0;
+    bottom: -20%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #C74151;
+}
+html{
+  background-size: contain;
+  background-image: url('../svg/hanging-candy-cane.svg');
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+body {
+  background-size: contain;
+  background-image: url('../svg/christmas-lights-top-border0.svg');
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+}
+audio{
+  display: block;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.juju{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: "frosty", Helvetica, Arial;
+  color: #fff;
+  letter-spacing: 0.3em;
+}
+.container {
+  position: absolute;
+  opacity: 0;
+  animation: mysnow 10s;
+  font-family: "snow", Helvetica, Arial;
+  text-align: center;
+  color: #fff;
+}
+
+#snowFlow {
+  overflow: hidden;
+  position: fixed;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../svg/snowflake-corners-border-bottom.svg');
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+#bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#tree-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 40%;
+  background-image: url('../svg/decorated-christmas-tree.svg');
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: cover;
+}
+
+#gifts {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+
+#snowmen {
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  animation: snowmenAnimate 2s ease infinite;
+}
+
+#candy {
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  animation: candyAnimate 2s ease infinite;
+}
