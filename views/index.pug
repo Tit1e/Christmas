@@ -12,14 +12,14 @@ html(lang='en')
         h1 juju
         h1 Merry Christmas
       #tree-box
-        img#gifts(src='/svg/colorful-christmas-presents.svg', alt='圣诞礼物', width='50%')
-        img#snowmen(src='/svg/snowman-with-hat-and-scarf.svg', alt='snowmen', width='70%')
-        img#candy(src='/svg/hanging-candy-cane.svg', alt='snowmen', width='30%')
+        img#gifts(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-colorful-christmas-presents.svg', alt='圣诞礼物', width='50%')
+        img#snowmen(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-snowman-with-hat-and-scarf.svg', alt='snowmen', width='70%')
+        img#candy(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-hanging-candy-cane.svg', alt='snowmen', width='30%')
     #snowFlow
     audio#audios(autoplay='', controls='', loop='', preload='')
       source(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-Jingle-bells.mp3')
-    img.hide(src="/svg/christmas-lights-top-border1.svg")
-    img.hide(src="/svg/christmas-lights-top-border2.svg")
+    img.hide(src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border2.svg")
+    img.hide(src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border1.svg")
     script.
       (function () {
       document.addEventListener('WeixinJSBridgeReady', function () {
@@ -52,7 +52,7 @@ html(lang='en')
       setInterval(function () {
       if (i === 3) i = 0
       let body = document.querySelector('body')
-      body.style.backgroundImage = 'url(/svg/christmas-lights-top-border' + i + '.svg)'
+      body.style.backgroundImage = 'url(//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border' + i + '.svg)'
       i++
       }, 300)
       })()

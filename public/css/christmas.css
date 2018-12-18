@@ -69,16 +69,9 @@ body {
   background: #C74151;
 }
 
-html {
-  background-size: contain;
-  background-image: url('../svg/hanging-candy-cane.svg');
-  background-repeat: no-repeat;
-  background-position-y: 100%;
-}
-
 body {
   background-size: contain;
-  background-image: url('../svg/christmas-lights-top-border0.svg');
+  background-image: url('//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border0.svg');
   background-repeat: no-repeat;
   background-position-y: 0%;
 }
@@ -121,7 +114,7 @@ audio {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../svg/snowflake-corners-border-bottom.svg');
+  background-image: url('//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-snowflake-corners-border-bottom.svg');
   background-repeat: no-repeat;
   background-position-y: 100%;
 }
@@ -138,7 +131,7 @@ audio {
   right: 0;
   width: 70%;
   height: 40%;
-  background-image: url('../svg/decorated-christmas-tree.svg');
+  background-image: url('//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-decorated-christmas-tree.svg');
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: cover;
