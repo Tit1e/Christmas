@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title juju Merry Christmas🎄
+    link(rel='stylesheet', href='/css/christmas.css')
+  body
+    #bg
+      .juju
+        h1 juju
+        h1 Merry Christmas
+      #tree-box
+        img#gifts(src='/svg/colorful-christmas-presents.svg', alt='圣诞礼物', width='50%')
+        img#snowmen(src='/svg/snowman-with-hat-and-scarf.svg', alt='snowmen', width='70%')
+        img#candy(src='/svg/hanging-candy-cane.svg', alt='snowmen', width='30%')
+    #snowFlow
+    audio#audios(autoplay='', controls='', loop='', preload='')
+      source(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-Jingle-bells.mp3')
+    script.
+      (function () {
+      document.addEventListener('WeixinJSBridgeReady', function () {
+      document.getElementById('audios').play()
+      })
+      document.addEventListener('touchstart', function () {
+      document.getElementById('audios').play()
+      })
+      var str = 'abcdefghijklmnopqrstuvwxyz,.;"?/';
+      function snowFlow(left, height, src) {
+      var container = document.createElement('div');
+      var snowFlow = document.getElementById('snowFlow');
+      container.innerText = str.charAt(Math.floor(Math.random() * 32))
+      container.className = 'container';
+      snowFlow.appendChild(container);
+      container.style.right = left + 'px';
+      container.style.height = height + 'px';
+      container.style.fontSize = Math.floor(Math.random() * (26 - 12) + 12) + 'px';
+      setTimeout(function () {
+      snowFlow.removeChild(container);
+      }, 10000);
+      }
+      setInterval(function () {
+      var left = Math.random() * window.innerWidth;
+      var height = Math.floor(Math.random() * (200 - 12) + 12);
+      var src = 'snow.png';
+      snowFlow(left, height, src);
+      }, 400)
+      var i = 0;
+      setInterval(function () {
+      if (i === 3) i = 0
+      let body = document.querySelector('body')
+      body.style.backgroundImage = 'url(/svg/christmas-lights-top-border' + i + '.svg)'
+      i++
+      }, 300)
+      })()
