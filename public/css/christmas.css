@@ -107,6 +107,25 @@ audio {
   right: 0;
   bottom: 0;
 }
+#loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C74151;
+  z-index: 9;
+  transition: ease 1s;
+  opacity: 1;
+}
+#loading-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-family: "frosty", Helvetica, Arial;
+}
 
 #bg {
   position: relative;
@@ -118,6 +137,7 @@ audio {
   background-image: url('//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border0.svg');
   background-repeat: no-repeat;
   background-position-y: 0%;
+  opacity: 0;
 }
 #bottom-border{
   width: 100%;

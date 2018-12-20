@@ -7,6 +7,8 @@ html(lang='en')
     title juju Merry Christmas🎄
     link(rel='stylesheet', href='/css/christmas.css')
   body
+    #loading
+      #loading-text 你是 … ju 嘛 ?
     #bg
       .juju
         h1 juju
@@ -23,6 +25,10 @@ html(lang='en')
     img.hide(src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border1.svg")
     script.
       (function () {
+      window.onload = () => {
+        document.querySelector('#bg').style.opacity = 1
+        document.querySelector('#loading').style.opacity = 0
+      }
       document.addEventListener('WeixinJSBridgeReady', function () {
       document.getElementById('audios').play()
       })
