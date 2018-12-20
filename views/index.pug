@@ -12,9 +12,10 @@ html(lang='en')
         h1 juju
         h1 Merry Christmas
       #tree-box
-        img#gifts(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-colorful-christmas-presents.svg', alt='圣诞礼物', width='50%')
-        img#snowmen(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-snowman-with-hat-and-scarf.svg', alt='snowmen', width='70%')
-        img#candy(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-hanging-candy-cane.svg', alt='snowmen', width='30%')
+        img#gifts(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-colorful-christmas-presents.svg', alt='圣诞礼物', width='200px')
+        img#snowmen(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-snowman-with-hat-and-scarf.svg', alt='snowmen', width='160px')
+        img#candy(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-hanging-candy-cane.svg', alt='snowmen', width='100px')
+      #bottom-border
     #snowFlow
     audio#audios(autoplay='', controls='', loop='', preload='')
       source(src='//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-Jingle-bells.mp3')
@@ -51,7 +52,7 @@ html(lang='en')
       var i = 0;
       setInterval(function () {
       if (i === 3) i = 0
-      let body = document.querySelector('body')
+      let body = document.querySelector('#bg')
       body.style.backgroundImage = 'url(//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border' + i + '.svg)'
       i++
       }, 300)
