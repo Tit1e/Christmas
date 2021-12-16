@@ -137,7 +137,6 @@ audio {
   background-image: url('//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border0.svg');
   background-repeat: no-repeat;
   background-position-y: 0%;
-  opacity: 0;
 }
 #bottom-border{
   width: 100%;
@@ -157,7 +156,6 @@ audio {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -100px;
-  /* background-position: center; */
 }
 
 #gifts {

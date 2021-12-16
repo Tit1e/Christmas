@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>juju Merry Christmas🎄</title>
+  <title>Merry Christmas🎄</title>
   <link rel="stylesheet" href="./css/christmas.css">
 </head>
 
 <body>
   <div id="bg">
     <div class="juju">
-      <h1>juju</h1>
+      <h1></h1>
       <h1>Merry Christmas</h1>
     </div>
     <div id="tree-box">
-      <img id="gifts" src="./svg/colorful-christmas-presents.svg" alt="圣诞礼物" width="50%">
-      <img id="snowmen" src="./svg/snowman-with-hat-and-scarf.svg" alt="snowmen" width="70%">
-      <img id="candy" src="./svg/hanging-candy-cane.svg" alt="snowmen" width="30%">
+      <img id="gifts" src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-colorful-christmas-presents.svg" alt="圣诞礼物" width="50%">
+      <img id="snowmen" src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-snowman-with-hat-and-scarf.svg" alt="snowmen" width="70%">
+      <img id="candy" src="//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-hanging-candy-cane.svg" alt="snowmen" width="30%">
     </div>
   </div>
   <div id="snowFlow"></div>
@@ -57,8 +57,8 @@
       var i = 0;
       setInterval(function () {
         if (i === 3) i = 0
-        let body = document.querySelector('body')
-        body.style.backgroundImage = 'url(./svg/christmas-lights-top-border' + i + '.svg)'
+        let body = document.querySelector('#bg')
+        body.style.backgroundImage = 'url(//personal-1251959693.cos.ap-chengdu.myqcloud.com/2018-12-18-christmas-lights-top-border' + i + '.svg)'
         i++
       }, 300)
     })()
